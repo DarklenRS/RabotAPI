@@ -1,6 +1,7 @@
 ﻿
 using Api;
 using Api.Common;
+using Api.Types;
 using Script;
 
 namespace ExampleScript
@@ -13,7 +14,7 @@ namespace ExampleScript
         public override int Loop()
         {
             // Script logic goes here
-            if(LocalPlayer.GetCurrentHealth() > 30 && !Movement.IsMoving())
+            if(LocalPlayer.GetCurrentHealth() > 30 && !Movement.IsMoving() && Skills.GetLevel(Skill.ATTACK) < 10)
             {
                 Npcs.GetNearest().DoAction(Action.ATTACK);
             }
