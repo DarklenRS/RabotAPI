@@ -10,9 +10,9 @@ namespace Api
     public static class LocalPlayer
     {
         public static Player Player;
-        public static int GetHealth()
+        public static int GetCurrentHealth()
         {
-            return Player.Health;
+            return Player.CurrentHealth;
         }
     }
 }

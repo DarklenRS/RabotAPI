@@ -13,7 +13,7 @@ namespace ExampleScript
         public override int Loop()
         {
             // Script logic goes here
-            if(LocalPlayer.GetHealth() > 30 && !Movement.IsMoving())
+            if(LocalPlayer.GetCurrentHealth() > 30 && !Movement.IsMoving())
             {
                 Npcs.GetNearest().DoAction(Action.ATTACK);
             }

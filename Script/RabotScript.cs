@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Script
 {
-    public abstract class Script
+    public abstract class RabotScript
     {
         public abstract void OnStart();
         public abstract void OnStop();

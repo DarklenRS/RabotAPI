@@ -10,7 +10,7 @@ namespace Api.Types
     {
         public Skill() { }
 
-        public static Skill ATTACK = new Skill);
+        public static Skill ATTACK = new Skill();
         public static Skill DEFENSE = new Skill();
         public static Skill STRENGTH = new Skill();
         public static Skill RANGED = new Skill();

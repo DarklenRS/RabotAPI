@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Api
 {
-    class Combat
+    public class Combat
     {
     }
 }
