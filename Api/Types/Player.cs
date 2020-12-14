@@ -11,10 +11,11 @@ namespace Api.Types
     {
         public string Name;
         public int CombatLevel;
-        public int Health;
-        // etc more stuff player related
+        public int CurrentHealth;
+        public int MaxHealth;
+        // ...more stuff player related
 
-        // Memory related stuff can be private/protected
+        // Memory related stuff can be private/protected and handled behind the scenes
         private ulong Address;
 
         // Implement methods here as well

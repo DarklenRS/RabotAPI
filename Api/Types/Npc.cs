@@ -9,5 +9,9 @@ namespace Api.Types
 {
     public class Npc : Entity
     {
+        public override bool DoAction(Common.Action action)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

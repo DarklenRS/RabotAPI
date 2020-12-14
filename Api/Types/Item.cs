@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Types
+namespace Api.Types
 {
-    class Item
+    public class Item
     {
     }
 }

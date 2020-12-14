@@ -5,18 +5,22 @@ using Script;
 
 namespace ExampleScript
 {
+    /// <summary>
+    /// A script example on how to use the API
+    /// </summary>
     public class ExampleScript : RabotScript
     {
         public override int Loop()
         {
             // Script logic goes here
-            if(LocalPlayer.GetHealth() > 30)
+            if(LocalPlayer.GetHealth() > 30 && !Movement.IsMoving())
             {
                 Npcs.GetNearest().DoAction(Action.ATTACK);
             }
             
-            // The return value from the main loop is how long the script waits before running again. This would be handled by Rabot behind the scenes.
-            return 0;
+            // The return value from the main loop is how long the script waits (in miliseconds) before running again. 
+            // This would be handled by Rabot behind the scene.
+            return 600;
         }
 
         public override void OnStart()
@@ -27,7 +31,7 @@ namespace ExampleScript
 
         public override void OnStop()
         {
-            // After script stop: close GUI ... etc
+            // After script stop: close GUI ... etc. 
             throw new System.NotImplementedException();
         }
     }
