@@ -10,10 +10,8 @@ namespace Api.Common
     {
         public Position Position { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        public bool DoAction(Action action)
-        {
-            throw new NotImplementedException();
-        }
+        public abstract bool DoAction(Action action);
+ 
 
         public int GetWorldX()
         {

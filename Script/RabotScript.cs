@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Script
 {
-    class Script
+    public abstract class Script
     {
+        public abstract void OnStart();
+        public abstract void OnStop();
+        public abstract int Loop();
     }
 }

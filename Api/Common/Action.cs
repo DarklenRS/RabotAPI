@@ -5,9 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Api.Common
-{
+{   
     public class Action
     {
         // Not sure how actions work but it could be class
-    }
+
+        public static Action ATTACK = new Action();
+    }   
 }
